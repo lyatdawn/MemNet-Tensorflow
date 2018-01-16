@@ -12,7 +12,7 @@ See requirements.txt for details.
 ## Datasets
 * In the implementation of the MemNet, VOC2007 and VOC2012 dataset as the training data, Set12 as the testing data.
 * Run the **scripts/generate_voc0712_compress.py** to generate compressed VOC images with quality factor 10. You should change the path of the data. Utilize cv2.imwrite() to change the quality factor, see the **scripts/generate_voc0712_compress.py** for details.
-* The Set12 dataset can be downloaded from here(https://drive.google.com/open?id=1nCkWFU3ksMB8ggqRHBrSMS2kjN6N6Ayq). Run the **scripts/set12_compress.py** to generate compressed Set12 images with quality factor 10. Also, you should change the path of the data.
+* The Set12 dataset can be downloaded from here [download](https://drive.google.com/open?id=1nCkWFU3ksMB8ggqRHBrSMS2kjN6N6Ayq). Run the **scripts/set12_compress.py** to generate compressed Set12 images with quality factor 10. Also, you should change the path of the data.
 * Run the **scripts/build_tfrecords.py** to generate training data, data format is tfrecords. In the process of generating TFRecords file, add two filed in the Features, one is clean images, the other is noisy images. When training MemNet, all the training data are converted to gray-scale images and resized to 256x256.
 
 ## Training a Model

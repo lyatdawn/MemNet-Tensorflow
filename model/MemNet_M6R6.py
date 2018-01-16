@@ -6,10 +6,8 @@ import tensorflow as tf
 from utils import res_mod_layers
 
 def memnet_m6r6(name, clean_data=None, noisy_data=None, num_filters=64, image_c=1, is_training=False, reuse=False):
-    # memnet_m6r6()传入: clean_image(label), noisy_image(data).
+    # memnet_m6r6(): clean_image(label), noisy_image(data).
     # num_filters: 64. image_c: image channel, is 1. is_training: BN used.
-    # 命名规则: 如果layer name作者已经指定了, 就无需自己重新命名了.
-    # memnet_m6r6()返回两个值: 1) loss. 2) 返回网络最终输出.
     with tf.variable_scope(name, reuse=reuse):
         # FNet: bn + relu + conv
         conv1 = res_mod_layers(noisy_data, num_filters=num_filters, kernel_size=3, strides=[1, 1], 

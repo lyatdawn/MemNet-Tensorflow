@@ -1,5 +1,5 @@
 # MemNet. 
-* Tensorflow implementation of MemNet in the paper "MemNet: A Persistent Memory Network for Image Restoration" ### [[Paper]](http://cvlab.cse.msu.edu/pdfs/Image_Restoration%20using_Persistent_Memory_Network.pdf)
+* Tensorflow implementation of MemNet in the paper "MemNet: A Persistent Memory Network for Image Restoration" [[Paper]](http://cvlab.cse.msu.edu/pdfs/Image_Restoration%20using_Persistent_Memory_Network.pdf)
 * Borrowed code and ideas from tyshiwo's MemNet: https://github.com/tyshiwo/MemNet.
 
 ## Install Required Packages

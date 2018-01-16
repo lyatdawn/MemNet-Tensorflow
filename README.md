@@ -40,9 +40,9 @@ You could change the arguments in cal_psnr_ssim.py depend on your machine config
 ## More Qualitative results
 I only implement the JPEG deblocking experiment, you can implement the image denosing and Super-resolution use this codes. If so, you should change the training datasets. Here is the training loss and JPEG deblocking results. The first column is the compressed image, second is the deblocked image, third is the clean image.
 * Testing results.
-![](results/0.png) 
+![](results/0.jpg) 
 
-![](results/1.png) 
+![](results/1.jpg) 
 
 * Training results.
 ![](results/train_072500.png) 
